@@ -1,4 +1,5 @@
 import { Pressable, View } from "react-native";
+import { COMPACT_TEXT_SCALE } from "@/theme/text-scale";
 import { useTheme } from "@/theme/ThemeProvider";
 import { AppText } from "./temel";
 
@@ -15,7 +16,8 @@ export function ChoiceTabs({ value, options, onChange, label, variant = "tiles" 
           const on = o.value === value;
           return (
             <Pressable key={o.value} accessibilityRole="tab" accessibilityState={{ selected: on }} onPress={() => onChange(o.value)} style={{ flex: 1, minHeight: 40, alignItems: "center", justifyContent: "center", borderRadius: radius.control - 2, backgroundColor: on ? colors.surface : "transparent" }}>
-              <AppText variant="subhead" tone={on ? "ink" : "soft"}>
+              {/* Parçalar yan yana kalmak zorunda: büyük yazıda 1,3× ile sınırlı ve ortalı (iki satıra inse de). */}
+              <AppText variant="subhead" tone={on ? "ink" : "soft"} maxFontSizeMultiplier={COMPACT_TEXT_SCALE} style={{ textAlign: "center", paddingHorizontal: 6 }}>
                 {o.label}
               </AppText>
             </Pressable>

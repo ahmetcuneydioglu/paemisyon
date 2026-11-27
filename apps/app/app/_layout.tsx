@@ -154,6 +154,7 @@ function RootNavigator() {
         <Stack.Screen name="inceleme/[sessionId]" options={{ presentation: "fullScreenModal" }} />
         <Stack.Screen name="oku/[slug]" options={{ presentation: "fullScreenModal" }} />
         <Stack.Screen name="kartlar" options={{ presentation: "fullScreenModal", gestureEnabled: false }} />
+        <Stack.Screen name="duello" options={{ presentation: "fullScreenModal", gestureEnabled: false }} />
         <Stack.Screen name="paywall" options={{ presentation: "modal" }} />
         <Stack.Screen name="anlatim/[slug]" options={{ headerShown: true, title: "Konu anlatımı" }} />
         <Stack.Screen name="ozet/[slug]" options={{ headerShown: true, title: "Konu oku" }} />

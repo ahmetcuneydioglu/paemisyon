@@ -14,6 +14,9 @@ export default function KutuphaneLayout() {
       <Stack.Screen name="testler/[courseId]" options={{ title: "Testler" }} />
       <Stack.Screen name="atlas/[topicId]" options={{ title: "Madde Atlası" }} />
       <Stack.Screen name="tekrar" options={{ title: "Tekrar" }} />
+      <Stack.Screen name="duello/index" options={{ headerShown: false }} />
+      <Stack.Screen name="duello/siralama" options={{ title: "Düello sıralaması" }} />
+      <Stack.Screen name="duello/istatistik" options={{ title: "Düello istatistikleri" }} />
     </Stack>
   );
 }

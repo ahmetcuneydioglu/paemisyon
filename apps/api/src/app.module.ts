@@ -30,6 +30,7 @@ import { ReviewPromptModule } from './modules/review-prompt/review-prompt.module
 import { ListsModule } from './modules/lists/lists.module';
 import { PlanModule } from './modules/plan/plan.module';
 import { RoomsModule } from './modules/rooms/rooms.module';
+import { DuelModule } from './modules/duel/duel.module';
 import { CourseTestsModule } from './modules/course-tests/course-tests.module';
 import { UsersModule } from './modules/users/users.module';
 import { SummariesModule } from './modules/summaries/summaries.module';
@@ -85,6 +86,7 @@ import { FlashcardsModule } from './modules/flashcards/flashcards.module';
     ListsModule,
     PlanModule,
     RoomsModule,
+    DuelModule,
     CourseTestsModule, // Doc 49/18 ders testleri
     HubSyncModule, // Doc 55 Soru Merkezi adaptörü (HUB_SYNC_* ile açılır)
     ReportsModule,

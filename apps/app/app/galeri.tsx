@@ -1,8 +1,8 @@
 import { useRouter } from "expo-router";
-import { ArrowLeft, Bell, BookOpen, Inbox, Play, RotateCcw, Search, Shuffle, Star } from "lucide-react-native";
+import { ArrowLeft, Bell, BookOpen, Flame, Inbox, Play, RotateCcw, Search, Shuffle, Star, Trophy, Zap } from "lucide-react-native";
 import { useState } from "react";
 import { View } from "react-native";
-import { CountdownHeader, CourseTile, FeedbackPanel, FlashCard, FlashcardEntry, FlashcardKindBadge, FlashcardResultPanel, FlashcardStateBar, LegislationRow, NotificationRow, QuestionMedia, QuestionMetaRow, QuestionOption, QuestionStem, RatingBar, ResultPanel, SessionProgress, SessionTitleBlock, TaskHero, ToolRow, UndoStrip, type OptionState, ShareQuestionCard, CourseCard, ResumeStrip, TestCard, CoveragePanel, UpsellStrip, ExamContextLine, ForYouList, LeaderboardTeaser, NextStepCard, ReviewPromptSheet, RouteList, WeekSummaryLine, LeaderboardList, LeaderboardMyRank, LeaderboardPodium, RankAvatar, RankLabel, RankSystemSheet } from "@/components/domain";
+import { CountdownHeader, CourseTile, FeedbackPanel, FlashCard, FlashcardEntry, FlashcardKindBadge, FlashcardResultPanel, FlashcardStateBar, LegislationRow, NotificationRow, QuestionMedia, QuestionMetaRow, QuestionOption, QuestionStem, RatingBar, ResultPanel, SessionProgress, SessionTitleBlock, TaskHero, ToolRow, UndoStrip, type OptionState, ShareQuestionCard, CourseCard, ResumeStrip, TestCard, CoveragePanel, UpsellStrip, ExamContextLine, ForYouList, LeaderboardTeaser, NextStepCard, ReviewPromptSheet, RouteList, WeekSummaryLine, LeaderboardList, LeaderboardMyRank, LeaderboardPodium, RankAvatar, RankLabel, RankSystemSheet, AnswerStrip, CompareTable, ConnectionNotice, DuelCodeBox, DuelPlayerRow, DuelPodium, DuelScoreboard, DuelStatusLine, DuelTimerBar, LobbySeat, RevealPair, RewardTiles, RoomScoreboard, StandingList } from "@/components/domain";
 import type { Flashcard } from "@/features/flashcards/queries";
 import type { LeaderboardRow, RankCatalogItem } from "@/features/progress/queries";
 import type { InboxItem } from "@/features/notifications/queries";
@@ -132,6 +132,15 @@ const seansAraclari = [
   { key: "favorite" as const, label: "Favori", active: true, onPress: () => {} },
   { key: "coach" as const, label: "Koça sor", onPress: () => {} },
   { key: "report" as const, label: "Hata bildir", onPress: () => {} },
+];
+
+const DUEL_ORNEK = [
+  { userId: "1", name: "Büşra Ö.", score: 702 },
+  { userId: "2", name: "Melisa E.", score: 655 },
+  { userId: "3", name: "Ahmet C.", score: 610 },
+  { userId: "4", name: "Kerem K.", score: 544 },
+  { userId: "5", name: "Hamza Ö.", score: 402 },
+  { userId: "6", name: "Bülent G.", score: 310 },
 ];
 
 export default function GaleriScreen() {
@@ -281,6 +290,38 @@ export default function GaleriScreen() {
           <LeaderboardMyRank me={{ ...liderlikSatiri(0, "Yeni Aday", 1, 0, 0, { isMe: true }), pointsToNext: null, nextName: null }} ranks={RUTBE_KATALOGU} />
           <Button title="Rütbe sistemi sayfasını aç" variant="secondary" onPress={() => setRutbeSheet(true)} />
           <RankSystemSheet visible={rutbeSheet} onClose={() => setRutbeSheet(false)} me={benimSatirim} ranks={RUTBE_KATALOGU} activeDayPoints={15} />
+        </Section>
+        <Section title="Düello (Doc 59 · Figma Düello 283:1735)">
+          <DuelScoreboard me={{ name: "Ahmet C.", score: 425 }} opponent={{ name: "Mustafa A.", score: 350, status: "thinking" }} seconds={12} clock="run" index={3} total={10} />
+          <DuelTimerBar fraction={0.6} state="run" />
+          <DuelScoreboard me={{ name: "Ahmet C.", score: 425 }} opponent={{ name: "Mustafa A.", score: 482, status: "answered" }} seconds={4} clock="urgent" index={3} total={10} />
+          <DuelTimerBar fraction={0.2} state="urgent" />
+          <RevealPair me={{ gained: 0, result: "wrong", detail: "doğru cevap B" }} opponent={{ name: "Mustafa A.", gained: 132, result: "correct", detail: "7,2 sn" }} />
+          <RevealPair me={{ gained: 128, result: "correct", detail: "8,6 sn" }} opponent={{ name: "Mustafa A.", gained: 0, result: "blank" }} />
+          <DuelStatusLine check text="Cevabın kilitlendi · Mustafa düşünüyor" />
+          <DuelStatusLine tone="danger" text="Süre bitince soru boş sayılır" />
+          <ConnectionNotice connection="offline" onRetry={() => {}} />
+          <RoomScoreboard rank={3} playerCount={6} score={482} seconds={11} clock="run" index={3} total={10} />
+          <AnswerStrip players={DUEL_ORNEK.map((p, i) => ({ userId: p.userId, name: p.name, answered: i !== 3 && i !== 5 }))} />
+          <StandingList rows={DUEL_ORNEK.map((p, i) => ({ userId: p.userId, rank: i + 1, name: p.name, isMe: i === 2, score: p.score, gained: i === 4 ? null : i === 1 || i === 5 ? 0 : 141 - i * 6, move: i === 2 ? "up" : i === 1 ? "down" : null }))} />
+          <DuelPodium rows={DUEL_ORNEK.slice(0, 3).map((p, i) => ({ userId: p.userId, placement: i + 1, name: p.name, score: p.score * 2, isMe: i === 2 }))} />
+          <View style={{ flexDirection: "row", gap: space.s2 }}>
+            <LobbySeat player={{ name: "Ahmet C.", isHost: true, isReady: true, isMe: true }} />
+            <LobbySeat player={{ name: "Büşra Ö.", isHost: false, isReady: true, isMe: false }} />
+          </View>
+          <View style={{ flexDirection: "row", gap: space.s2 }}>
+            <LobbySeat player={{ name: "Hamza Ö.", isHost: false, isReady: false, isMe: false }} />
+            <LobbySeat player={null} />
+          </View>
+          <DuelCodeBox code="S4KD9P" hint="9:41 geçerli · tek kullanımlık" />
+          <DuelCodeBox compact code="S4KD9P" />
+          <Card style={{ padding: 0 }}>
+            <DuelPlayerRow name="Büşra Ö." online note="Çevrimiçi · Lig 1.204" action={<Button title="Çağır" size="sm" />} />
+            <DuelPlayerRow divider name="Bülent G." online note="Davet gönderildi · 0:54" noteTone="accent" action={<Button title="Geri al" size="sm" variant="ghost" />} />
+            <DuelPlayerRow divider name="Burak A." note="Çevrimdışı · bildirim gider" action={<Button title="Çağır" size="sm" variant="secondary" />} />
+          </Card>
+          <RewardTiles items={[{ icon: <Zap size={18} color={colors.accentInk} />, value: "+60 XP", label: "Kazanılan" }, { icon: <Trophy size={18} color={colors.accentInk} />, value: "+12", label: "Lig 1.048" }, { icon: <Flame size={18} color={colors.accentInk} />, value: "4", label: "Galibiyet serisi" }]} />
+          <CompareTable rows={[{ label: "Doğru", mine: "8", theirs: "6" }, { label: "Yanlış", mine: "2", theirs: "3" }, { label: "Ortalama süre", mine: "6,4 sn", theirs: "9,8 sn" }]} />
         </Section>
         <Section title="Bugün v3 (Doc 49/16)">
           <ExamContextLine daysLeft={184} examName="PAEM 2027" activeDays={3} goalDays={5} days={["done", "done", "done", "today", "future", "future", "future"]} onPickDate={() => {}} />

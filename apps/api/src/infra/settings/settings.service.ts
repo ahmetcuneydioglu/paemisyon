@@ -41,6 +41,12 @@ export const SETTING_KEYS = {
   reviewPromptMinGapDays: 'review_prompt.min_gap_days',
   /// 'Değerlendir' denmişse bir sonraki istem için en az gün; varsayılan 180.
   reviewPromptAfterAcceptDays: 'review_prompt.after_accept_days',
+  /// Düello (Doc 59) herkese açık mı? Kapalıyken yalnız admin ve beta rolleri görür.
+  /// Varsayılanı KAPALI: düello ekranlarını içeren mağaza sürümü yayılınca açılır.
+  duelEnabled: 'duel.enabled',
+  /// Ücretsiz adayın günde başlatabileceği/katılabileceği en çok maç; varsayılan 5.
+  /// 0 = sınırsız. Premium her zaman sınırsız.
+  duelFreeDailyLimit: 'duel.free_daily_limit',
 } as const;
 
 /**

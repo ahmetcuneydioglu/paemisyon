@@ -38,3 +38,5 @@ export * from "./leaderboard";
 export * from "./review-prompt-sheet";
 export * from "./review-prompt-host";
 export * from "./auth-scaffold";
+export * from "./duel";
+export * from "./duel-sheets";

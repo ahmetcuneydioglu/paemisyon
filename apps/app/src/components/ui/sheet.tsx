@@ -1,6 +1,6 @@
 import { X } from "lucide-react-native";
 import { useCallback, useRef, useState, type ReactNode } from "react";
-import { Modal, Platform, Pressable, ScrollView, View } from "react-native";
+import { KeyboardAvoidingView, Modal, Platform, Pressable, ScrollView, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useTheme } from "@/theme/ThemeProvider";
 import { IconButton } from "./icon-button";
@@ -15,6 +15,8 @@ export function Sheet({ visible, onClose, onDismissed, title, children, footer }
   const insets = useSafeAreaInsets();
   return (
     <Modal visible={visible} transparent animationType="slide" onRequestClose={onClose} onDismiss={onDismissed} accessibilityViewIsModal>
+      {/* Klavye açılınca sayfa yukarı kayar: içinde metin alanı olan sayfalarda (kod gir, oyuncu ara) alan klavyenin altında kalmasın. */}
+      <KeyboardAvoidingView behavior={Platform.OS === "ios" ? "padding" : undefined} style={{ flex: 1 }}>
       <Pressable accessibilityLabel="Kapat" onPress={onClose} style={{ flex: 1, backgroundColor: "rgba(0,0,0,0.45)" }} />
       <View
         style={{
@@ -37,6 +39,7 @@ export function Sheet({ visible, onClose, onDismissed, title, children, footer }
         <ScrollView contentContainerStyle={{ paddingHorizontal: space.s5, paddingBottom: space.s3, gap: space.s3 }}>{children}</ScrollView>
         {footer ? <View style={{ paddingHorizontal: space.s5, paddingTop: space.s2 }}>{footer}</View> : null}
       </View>
+      </KeyboardAvoidingView>
     </Modal>
   );
 }

@@ -235,6 +235,19 @@ model User {
   dailyFocus           DailyFocus?
   preferredModule      ExamType?                 @relation(fields: [preferredModuleId], references: [id])
 
+  // Düello (Doc 59)
+  duelParticipations  DuelParticipant[]
+  duelHosted          DuelMatch[]       @relation("DuelHost")
+  duelQueue           DuelQueue?
+  duelInvitesSent     DuelInvitation[]  @relation("DuelInviteFrom")
+  duelInvitesReceived DuelInvitation[]  @relation("DuelInviteTo")
+  duelStats           DuelStats?
+  xpEvents            XpEvent[]
+  friendshipsA        Friendship[]      @relation("FriendA")
+  friendshipsB        Friendship[]      @relation("FriendB")
+  blocksGiven         UserBlock[]       @relation("Blocker")
+  blocksReceived      UserBlock[]       @relation("Blocked")
+
   @@map("users")
 }
 
@@ -322,6 +335,9 @@ model ExamType {
   studyPlans     StudyPlan[]
   exams          Exam[]
   examCalendar   ExamCalendar[]
+
+  duelMatches DuelMatch[]
+  duelQueue   DuelQueue[]
 
   @@map("modules")
 }
@@ -1088,10 +1104,11 @@ model QuestionVersion {
   /// (seçenek kimlikleri bundan türetilir); S2 kökenli mevcut sürümlerde yalnız eşleme.
   hubVersionId   String?       @unique @map("hub_version_id") @db.Uuid
 
-  question          Question         @relation("QuestionVersions", fields: [questionId], references: [id])
-  currentOfQuestion Question?        @relation("CurrentVersion")
+  question          Question            @relation("QuestionVersions", fields: [questionId], references: [id])
+  currentOfQuestion Question?           @relation("CurrentVersion")
   options           QuestionOption[]
   legalReferences   LegalReference[]
+  duelQuestions     DuelMatchQuestion[]
   examQuestions     ExamQuestion[]
 
   @@unique([questionId, versionNo])
@@ -2976,4 +2993,253 @@ model LessonProgress {
   @@id([userId, lessonId])
   @@index([userId, updatedAt])
   @@map("lesson_progress")
+}
+
+// ─────────────────────────────────────────────
+// Düello ve çok oyunculu salon (Doc 59). Otorite SUNUCUDA: istemci hiçbir
+// tabloya doğrudan erişmez (RLS açık, politika yok); maç durumu zaman
+// damgalarından tembel hesaplanır, Realtime yalnız taşıyıcıdır.
+// ─────────────────────────────────────────────
+
+enum DuelKind {
+  duel // 1'e 1
+  room // 3–8 kişilik salon
+}
+
+enum DuelPhase {
+  lobby
+  countdown
+  question
+  reveal
+  finished
+  cancelled
+}
+
+enum DuelInvitationStatus {
+  pending
+  accepted
+  declined
+  expired
+  cancelled
+}
+
+model DuelMatch {
+  id                 String    @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  kind               DuelKind
+  phase              DuelPhase @default(lobby)
+  /// Kurum: yalnız aynı modülün adayları eşleşir, sorular bu modülün müfredatından gelir.
+  moduleId           String    @map("module_id") @db.Uuid
+  /// Salon başkanı / özel düelloyu kuran; hızlı eşleşmede null.
+  hostId             String?   @map("host_id") @db.Uuid
+  name               String?
+  isPublic           Boolean   @default(false) @map("is_public")
+  /// Davet kodu; yalnız lobide geçerli, süresi dolunca reddedilir.
+  code               String?   @unique
+  codeExpiresAt      DateTime? @map("code_expires_at")
+  /// 'mixed' | 'course' | 'topic'
+  scopeKind          String    @default("mixed") @map("scope_kind")
+  scopeId            String?   @map("scope_id") @db.Uuid
+  questionCount      Int       @map("question_count")
+  secondsPerQuestion Int       @map("seconds_per_question")
+  maxPlayers         Int       @map("max_players")
+  /// Aktif soru (0 tabanlı); lobi ve geri sayımda -1.
+  currentIndex       Int       @default(-1) @map("current_index")
+  phaseStartedAt     DateTime? @map("phase_started_at")
+  /// Fazın sunucu saatiyle bitişi: süre dolumu bu damgadan tembel işlenir.
+  phaseEndsAt        DateTime? @map("phase_ends_at")
+  /// Her durum değişiminde artar; istemci eski yayını bununla eler.
+  seq                Int       @default(0)
+  createdAt          DateTime  @default(now()) @map("created_at")
+  startedAt          DateTime? @map("started_at")
+  finishedAt         DateTime? @map("finished_at")
+  /// Ödül (XP, lig puanı, istatistik) bir kez işlenir.
+  rewardedAt         DateTime? @map("rewarded_at")
+
+  module       ExamType            @relation(fields: [moduleId], references: [id])
+  host         User?               @relation("DuelHost", fields: [hostId], references: [id], onDelete: SetNull)
+  participants DuelParticipant[]
+  questions    DuelMatchQuestion[]
+  answers      DuelAnswer[]
+  invitations  DuelInvitation[]
+
+  @@index([phase, phaseEndsAt])
+  @@index([kind, phase, moduleId, isPublic])
+  @@index([finishedAt])
+  @@map("duel_matches")
+}
+
+model DuelParticipant {
+  matchId      String    @map("match_id") @db.Uuid
+  userId       String    @map("user_id") @db.Uuid
+  /// Kullanıcı başına TEK aktif maç: kısmi tekil indeks (user_id) WHERE active.
+  active       Boolean   @default(true)
+  isReady      Boolean   @default(false) @map("is_ready")
+  joinedAt     DateTime  @default(now()) @map("joined_at")
+  leftAt       DateTime? @map("left_at")
+  kickedAt     DateTime? @map("kicked_at")
+  /// Yalnız KAPANMIŞ soruların toplamı (açık sorunun puanı kapanışta işlenir).
+  score        Int       @default(0)
+  correctCount Int       @default(0) @map("correct_count")
+  wrongCount   Int       @default(0) @map("wrong_count")
+  /// Doğru cevapların toplam süresi (eşitlik bozucu).
+  correctMs    Int       @default(0) @map("correct_ms")
+  answerMs     Int       @default(0) @map("answer_ms")
+  placement    Int?
+  /// 'win' | 'loss' | 'draw'
+  outcome      String?
+  xpAwarded    Int?      @map("xp_awarded")
+  ratingDelta  Int?      @map("rating_delta")
+
+  match DuelMatch @relation(fields: [matchId], references: [id], onDelete: Cascade)
+  user  User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([matchId, userId])
+  @@index([userId, joinedAt])
+  @@map("duel_participants")
+}
+
+/// Maç başlarken SABİTLENEN soru seti: herkes aynı soruyu aynı sırada görür.
+model DuelMatchQuestion {
+  matchId           String @map("match_id") @db.Uuid
+  index             Int
+  questionVersionId String @map("question_version_id") @db.Uuid
+  correctOptionId   String @map("correct_option_id") @db.Uuid
+
+  match   DuelMatch       @relation(fields: [matchId], references: [id], onDelete: Cascade)
+  version QuestionVersion @relation(fields: [questionVersionId], references: [id])
+
+  @@id([matchId, index])
+  @@map("duel_match_questions")
+}
+
+/// Birincil anahtar (maç, soru, kullanıcı): aynı soruya ikinci cevap veritabanında reddedilir.
+model DuelAnswer {
+  matchId    String   @map("match_id") @db.Uuid
+  index      Int
+  userId     String   @map("user_id") @db.Uuid
+  optionId   String   @map("option_id") @db.Uuid
+  isCorrect  Boolean  @map("is_correct")
+  elapsedMs  Int      @map("elapsed_ms")
+  points     Int
+  answeredAt DateTime @default(now()) @map("answered_at")
+
+  match DuelMatch @relation(fields: [matchId], references: [id], onDelete: Cascade)
+
+  @@id([matchId, index, userId])
+  @@map("duel_answers")
+}
+
+/// Hızlı eşleşme kuyruğu; birincil anahtar kullanıcı (iki cihazdan çift kayıt olamaz).
+model DuelQueue {
+  userId     String   @id @map("user_id") @db.Uuid
+  moduleId   String   @map("module_id") @db.Uuid
+  scopeKind  String   @default("mixed") @map("scope_kind")
+  scopeId    String?  @map("scope_id") @db.Uuid
+  rating     Int
+  enqueuedAt DateTime @default(now()) @map("enqueued_at")
+  /// İstemci yoklaması uzatır; ölü istemci kendiliğinden düşer.
+  expiresAt  DateTime @map("expires_at")
+
+  user   User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  module ExamType @relation(fields: [moduleId], references: [id])
+
+  @@index([moduleId, scopeKind, scopeId, enqueuedAt])
+  @@map("duel_queue")
+}
+
+model DuelInvitation {
+  id          String               @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  fromUserId  String               @map("from_user_id") @db.Uuid
+  toUserId    String               @map("to_user_id") @db.Uuid
+  status      DuelInvitationStatus @default(pending)
+  /// Salon daveti ise hedef salon; 1'e 1 davette kabul anında maç kurulur ve buraya yazılır.
+  matchId     String?              @map("match_id") @db.Uuid
+  scopeKind   String               @default("mixed") @map("scope_kind")
+  scopeId     String?              @map("scope_id") @db.Uuid
+  createdAt   DateTime             @default(now()) @map("created_at")
+  expiresAt   DateTime             @map("expires_at")
+  respondedAt DateTime?            @map("responded_at")
+
+  from  User       @relation("DuelInviteFrom", fields: [fromUserId], references: [id], onDelete: Cascade)
+  to    User       @relation("DuelInviteTo", fields: [toUserId], references: [id], onDelete: Cascade)
+  match DuelMatch? @relation(fields: [matchId], references: [id], onDelete: SetNull)
+
+  @@index([toUserId, status, expiresAt])
+  @@index([fromUserId, createdAt])
+  @@map("duel_invitations")
+}
+
+model DuelStats {
+  userId        String   @id @map("user_id") @db.Uuid
+  duels         Int      @default(0)
+  wins          Int      @default(0)
+  losses        Int      @default(0)
+  draws         Int      @default(0)
+  currentStreak Int      @default(0) @map("current_streak")
+  bestStreak    Int      @default(0) @map("best_streak")
+  correctTotal  Int      @default(0) @map("correct_total")
+  answersTotal  Int      @default(0) @map("answers_total")
+  answerMsTotal BigInt   @default(0) @map("answer_ms_total")
+  rooms         Int      @default(0)
+  roomWins      Int      @default(0) @map("room_wins")
+  /// 1'e 1 lig puanı (Elo); XP'den AYRI.
+  rating        Int      @default(1000)
+  /// Salon puanı (SP).
+  roomRating    Int      @default(1000) @map("room_rating")
+  xpEarned      Int      @default(0) @map("xp_earned")
+  updatedAt     DateTime @updatedAt @map("updated_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([rating])
+  @@index([roomRating])
+  @@map("duel_stats")
+}
+
+/// XP defteri: (kullanıcı, kaynak, kaynak kimliği) tekil — aynı maçtan ikinci ödül yazılamaz.
+model XpEvent {
+  id        String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  userId    String   @map("user_id") @db.Uuid
+  /// 'duel' | 'room'
+  source    String
+  sourceId  String   @map("source_id")
+  amount    Int
+  createdAt DateTime @default(now()) @map("created_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, source, sourceId])
+  @@index([userId, createdAt])
+  @@map("xp_events")
+}
+
+/// Arkadaşlık: çift kanonik sırada tutulur (userAId < userBId), tek satır.
+model Friendship {
+  userAId       String    @map("user_a_id") @db.Uuid
+  userBId       String    @map("user_b_id") @db.Uuid
+  requestedById String    @map("requested_by_id") @db.Uuid
+  /// 'pending' | 'accepted'
+  status        String    @default("pending")
+  createdAt     DateTime  @default(now()) @map("created_at")
+  acceptedAt    DateTime? @map("accepted_at")
+
+  userA User @relation("FriendA", fields: [userAId], references: [id], onDelete: Cascade)
+  userB User @relation("FriendB", fields: [userBId], references: [id], onDelete: Cascade)
+
+  @@id([userAId, userBId])
+  @@index([userBId])
+  @@map("friendships")
+}
+
+model UserBlock {
+  blockerId String   @map("blocker_id") @db.Uuid
+  blockedId String   @map("blocked_id") @db.Uuid
+  createdAt DateTime @default(now()) @map("created_at")
+
+  blocker User @relation("Blocker", fields: [blockerId], references: [id], onDelete: Cascade)
+  blocked User @relation("Blocked", fields: [blockedId], references: [id], onDelete: Cascade)
+
+  @@id([blockerId, blockedId])
+  @@index([blockedId])
+  @@map("user_blocks")
 }
